@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <script type="text/javascript" src="js/index.js" defer></script>
+  <title>TP Grupo 104</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" media="(max-width: 480px)" href="css/mobile.css" />
+    <title>TP Grupo 104</title>
+</head>
+
+<body>
+  <div class="logo">
+    <header>
+      <img class="epe-izq" src="img/logo-epe-blanco-nuevo.png" width="160">
+      <h1>Calculadora de costo de energía eléctrica</h1>
+    </header>
+  </div>
+  <div class="img-div">
+    <div class="calculadora">
+      <form name="frmCalc" method="post" id="frmCalc">
+        <label for="usuario">Tipo de Usuario:</label>
+        <div class="item-form" id="item-form">
+          <input type="radio" name="usuarios" id ="usuarios-residencial" value="residencial" required="required"> Residencial
+          <input type="radio" name="usuarios" id ="usuarios-industrial" value="industrial" required="required"> Industrial
+          <input type="radio" name="usuarios" id ="usuarios-prueba" value="prueba" required="required" checked>
+        </div>
+        <div class="cant_kwh">
+          <label for="cant_mes">Cantidad de kWh del mes:</label>
+          <input type="number" name="cantidad" id="cantidad" >
+        </div>
+        <div class="distritos">
+          <label for="distrito">Elija su distrito</label>
+        </li>
+        <select name="distritos" id="distritos">
+          <option selected>Elegir...</option>
+          <option id="distrito-centro" name="distrito-centro" value="distrito-centro">Distrito Centro</option>
+          <option id="distrito-sur" name="distrito-sur" value="distrito-sur">Distrito Sur</option>
+          <option id="distrito-oeste" name="distrito-oeste" value="distrito-oeste">Distrito Oeste</option>
+          <option id="distrito-norte" name="distrito-norte" value="distrito-norte">Distrito Norte</option>
+        </select>
+      </div>    
+      <div class="display">
+        <button type="button" name="calcular" id="calcular" onclick=" validarCheckbox(); validarCantidadKwh(); validarDistritos(); calcularKwh()"> CALCULAR</button>
+        <p type="text" name="txtResult" id="result" size="30">
+        </div>
+      <br>    
+    </form>
+    <div class="container-explicacion">
+      <h3>Información de la calculadora</h3>
+    <div>
+    <ul class="tipo-usuario">
+      <li class="title-li">Tipo de usuario</li>
+      <li>Residencial: aplica IVA 21% </li>
+      <li>Industrial: aplica IVA 27%</li>
+    </ul>
+    <ul class="zona-dom">
+      <li class="title-li">Zona del domicilio</li>
+      <li>Distrito Centro: $5,80 por kWh</li>
+      <li>Distrito Zur: $5.40 por kWh</li>
+      <li>Distrito Oeste: $5.35 por kWh</li>
+      <li>Distrito Norte: $5.60 por kWh</li>
+      <li class="title-li">Costo de servicio: $102</li>
+    </ul>
+  </div>
+    </div>
+    </div>
+
+  </div>
+  </div>
+</div>  
+<footer>
+  <div class="epe-footer">
+  <img class="img-epe-footer" src="img/logo-epe-blanco-nuevo.png" width="80px">
+  <p>© 2021 Empresa Provincial de la Energía de Santa Fe</p>
+  <img class="img-stafe-footer"src="img/logo-stafe-provincia.png" width="100px"> 
+</div>
+</footer>
+</body>
+
+</html>

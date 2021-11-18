@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  flex-direction: column;
+}
+
+header h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.epe-izq {
+  width: 100px;
+  padding-right: 5px;
+}
+
+.calculadora {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 12px;
+}
+
+.container-explicacion {
+  width: 280px;
+  height: 230px;
+  margin-top: 5px;
+}
+
+.container-explicacion h3 {
+  font-size: 15px;
+}
+
+.container-explicacion li {
+  font-size: 15px;
+}
+
+form {
+  width: 300px;
+  height: 320px;
+  margin-left: 50px;
+  padding: 0px;
+}
+
+form label {
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 0px;
+}
+
+.cant_kwh {
+  flex-direction: column;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+#cantidad {
+  width: 180px;
+}
+
+#distritos {
+  font-size: 14px;
+  width: auto;
+  width: 180px;
+  text-align: center;
+}
+
+.distritos {
+  flex-direction: column;
+}
+
+#result {
+  width: 80px;
+}
+
+#calcular {
+  height: 15px;
+}
+
+.item-form {
+  font-size: 15px;
+  padding-left: 60px;
+}
+
+.display {
+  flex-direction: row;
+  font-size: 15px;
+}
+
+.img-div {
+  height: 100%;
+  background-color: #152f5c;
+  background-size: 952px;
+}
+
+.epe-footer p {
+  font-size: 12px;
+}
+
+.epe-footer {
+  height: 80px;
+}
+
+.img-epe-footer {
+  width: 60px;
+  padding-left: 15px;
+  padding-right: 50px;
+}
+
+.img-stafe-footer {
+  width: 80px;
+  padding-right: 15px;
+  padding-left: 50px;
+}
